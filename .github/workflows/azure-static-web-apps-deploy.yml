@@ -45,7 +45,7 @@ jobs:
           api_location: ""
           output_location: ".next"
           app_build_command: "npm run build"
-          skip_app_build: true  # Skip build since we already built it
+          skip_app_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
