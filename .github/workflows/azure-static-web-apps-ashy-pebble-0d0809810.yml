@@ -33,6 +33,7 @@ jobs:
         run: npm run build
         env:
           CI: true
+          IS_STATIC_EXPORT: true 
           
       - name: Build And Deploy
         id: builddeploy
